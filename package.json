@@ -1,0 +1,20 @@
+{
+  "name": "coreml",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MaatheusGois/CoreML.git"
+  },
+  "keywords": [],
+  "author": "Matheus Gois <matheusgoislimasilva@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MaatheusGois/CoreML/issues"
+  },
+  "homepage": "https://github.com/MaatheusGois/CoreML#readme"
+}
