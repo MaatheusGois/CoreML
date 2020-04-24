@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CoreMLImageApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" clipsSubviews="YES" contentMode="scaleAspectFit" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YCu-ju-cYD">
+                                <rect key="frame" x="20" y="397.5" width="374" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Cum-Jp-leq">
+                                <rect key="frame" x="0.0" y="514.5" width="414" height="285"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="bf5-76-LuJ">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dog_02" translatesAutoresizingMaskIntoConstraints="NO" id="nn8-Fm-TeL">
+                                <rect key="frame" x="114" y="96.5" width="186" height="260"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusV">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="nn8-Fm-TeL" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" multiplier="0.5" id="1t4-d5-3Wq"/>
+                            <constraint firstItem="YCu-ju-cYD" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="9Uy-aU-mc8"/>
+                            <constraint firstItem="Cum-Jp-leq" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="LA9-h2-Q51"/>
+                            <constraint firstItem="Cum-Jp-leq" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="SDD-Dp-czo"/>
+                            <constraint firstItem="YCu-ju-cYD" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.903382" id="Xna-ez-wvg"/>
+                            <constraint firstItem="nn8-Fm-TeL" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.449275" id="YsL-xs-V46"/>
+                            <constraint firstItem="Cum-Jp-leq" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.31808" id="aj7-Na-iXL"/>
+                            <constraint firstItem="Cum-Jp-leq" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" multiplier="1.45" id="iWH-6l-l9u"/>
+                            <constraint firstItem="nn8-Fm-TeL" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.290179" id="nep-i7-U1y"/>
+                            <constraint firstItem="nn8-Fm-TeL" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="wad-vF-g9d"/>
+                            <constraint firstItem="YCu-ju-cYD" firstAttribute="centerY" secondItem="nn8-Fm-TeL" secondAttribute="centerY" multiplier="1.8" id="yRs-RX-x14"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="Cum-Jp-leq" id="gwV-9b-Jo0"/>
+                        <outlet property="descriptionLabel" destination="YCu-ju-cYD" id="LhC-gK-GZx"/>
+                        <outlet property="imageView" destination="nn8-Fm-TeL" id="3gy-BN-ej8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="dog_02" width="900" height="1253"/>
+    </resources>
+</document>
