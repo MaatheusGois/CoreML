@@ -1,6 +1,5 @@
 <h1 align="center">Welcome to coreml 👋</h1>
 
-<p><img alt="Preview" src="./preview_pet_coreml.gif"/></p>
 <p>
   <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
   <a href="https://github.com/MaatheusGois/CoreML#readme" target="_blank">
@@ -15,6 +14,10 @@
 </p>
 
 ### 🏠 [Homepage](https://github.com/MaatheusGois/CoreML#readme)
+
+
+<p><img alt="Preview" src="./preview_pet_coreml.gif"/></p>
+
 
 ## Author
 
